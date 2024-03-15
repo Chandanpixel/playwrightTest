@@ -33,4 +33,4 @@ npx playwright test example.spec.ts:10 --debug //To debug a specific test from t
                   -------Test reports----------
  npx playwright show-report   // HTML report
 
- Hello Nihar 
+ 
