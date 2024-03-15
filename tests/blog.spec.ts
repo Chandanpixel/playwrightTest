@@ -15,6 +15,7 @@ test.describe('Blog', () => {
 
         // get the recent post list item
        // const  recentPostList = await page.locator('#recent-posts-3 ul li')
+       // try 
        // OR 
         const recentPostList=blogPage.recentPostLink
 
