@@ -1,0 +1,36 @@
+----------------     Running tests     ------
+Command line
+You can run your tests with the playwright test command. 
+This will run your tests on all browsers as configured in the playwright.config file. 
+Tests run in headless mode by default meaning no browser window will be opened while running the tests and results will be seen in the terminal.
+
+command : npx playwright test
+
+Run tests in UI mode : npx playwright test --ui
+ 
+Run tests in headed mode : npx playwright test --headed
+
+Run tests on different browsers :
+npx playwright test --project webkit
+npx playwright test --project webkit --project firefox
+
+Run specific tests:
+To run a single test file, pass in the name of the test file that you want to run.
+command: npx playwright test landing-page.spec.ts
+                    
+                    ---------Debug----------------
+Debug tests in UI mode : npx playwright test --ui
+
+Debug tests with the Playwright Inspector
+To debug all tests, run the Playwright test command followed by the --debug flag.
+
+npx playwright test --debug
+ 
+npx playwright test example.spec.ts --debug    // To debug one test file
+
+npx playwright test example.spec.ts:10 --debug //To debug a specific test from the line number where the test(.. is defined
+
+                  -------Test reports----------
+ npx playwright show-report   // HTML report
+
+ 

@@ -4,7 +4,7 @@ import Blogpage from '../pages/blog.page';
 test.describe('Blog', () => {
     let blogPage :Blogpage;
 
-    test('Verify the recent post count and verify the list of each item  ', async ({ page }) => {
+    test('Verify the recent post count and verify the list of each item ', async ({ page }) => {
       blogPage = new Blogpage(page)
 
       //open URL 
