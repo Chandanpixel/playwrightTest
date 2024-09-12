@@ -33,4 +33,23 @@ npx playwright test example.spec.ts:10 --debug //To debug a specific test from t
                   -------Test reports----------
  npx playwright show-report   // HTML report
 
- 
+
+
+
+
+
+Handling Alert
+//Click on Ok
+page.on('dialog', dialog => dialog.accept());
+
+Handling confirm
+//Click on Ok
+page.on('dialog', dialog => dialog.accept());
+
+//Click on Cancel
+
+page.on('dialog', dialog => dialog.dismiss ());
+
+Handling Prompt
+//Type the text, RSAcademy and Accept the pop up
+page.on('dialog', dialog => dialog.accept("RSAcademy"));
